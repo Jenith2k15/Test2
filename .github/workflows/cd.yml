@@ -21,8 +21,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set SSC false
-    - run: npm config set strict-ssl=false
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
