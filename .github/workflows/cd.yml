@@ -21,8 +21,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Run SSL Verify False
-      run: git config --global http.sslVerify false
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
